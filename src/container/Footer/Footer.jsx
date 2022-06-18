@@ -82,15 +82,15 @@ const Footer = () => {
         <form ref={form}>
         <div className="app__footer-form app__flex">
             <div className="app__flex">
-            <label for="name"></label>
+            <label htmlFor="name"></label>
             <input className="p-text" type="text" placeholder="Your Name" name="name" value={username} onChange={handleChangeInput} required/>
           </div>
             <div className="app__flex">
-            <label for="email"></label>
+            <label htmlFor="email"></label>
             <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} required/>
           </div>
             <div>
-            <label for="message"></label>
+            <label htmlFor="message"></label>
             <textarea
               className="p-text"
               placeholder="Your Message"
