@@ -15,12 +15,12 @@ const Navbar = () => {
        
           <li className="app__flex p-text">
            
-            <a href='#'> Home</a>
+            <a href='https://patriziothedev.com/'> Home</a>
         </li>
         
         <li className="app__flex p-text">
            
-           <a href='#'>About Me</a>
+           <a href='https://patriziothedev.com/'>About Me</a>
         </li>
         
        
@@ -39,7 +39,7 @@ const Navbar = () => {
             <ul>
               
                 <li>
-                  <a href='#' onClick={() => setToggle(false)}>Home
+                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>Home
                   
                 </a>
                 
@@ -47,7 +47,7 @@ const Navbar = () => {
               
               
               <li>
-                  <a href='#' onClick={() => setToggle(false)}>About Me
+                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>About Me
                   
                 </a>
                 
