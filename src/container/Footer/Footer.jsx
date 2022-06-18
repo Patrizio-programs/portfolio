@@ -1,7 +1,7 @@
 import React, { useState, useRef}  from 'react'
 import './Footer.scss'
 import { motion } from 'framer-motion';
-import AppWrap from '../../wrapper/AppWrap';
+import AppWrap from '../../Wrapper/AppWrap';
 import { client } from './../../client';
 import emailjs from "@emailjs/browser";
 
