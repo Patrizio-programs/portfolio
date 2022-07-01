@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <>📱</>
-          <a href="tel:+1 (784) 430-3121" className="p-text">+1 (784) 430-3121</a>
+          <a href="tel:+1 (784) 430-3121" className="p-text">+1 (784) 430-3121 test</a>
         </div>
       </div>
       {!isFormSubmitted ? (

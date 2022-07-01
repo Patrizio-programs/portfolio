@@ -23,7 +23,6 @@ const Navbar = () => {
            <a href='https://patriziothedev.com/'>About Me</a>
         </li>
         
-
         <li className="app__flex p-text">
            
            <a href='#contact'>Contact</a>
@@ -52,7 +51,7 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <a href='#contact' >Contact</a>
+                  <a href='#contact' onClick={() => setToggle(false)} >Contact</a>
                 </li>
           
             </ul>
