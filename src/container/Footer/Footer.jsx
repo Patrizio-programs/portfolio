@@ -66,7 +66,7 @@ const Footer = () => {
 
   return (
     <>
-      <a id='contact'><h2 className="head-text">Contact</h2> </a>
+      <a id='contact' href='/' onClick={ (event) => event.preventDefault() }><h2 className="head-text">Contact</h2> </a>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">

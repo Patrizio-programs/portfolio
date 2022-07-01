@@ -2,6 +2,7 @@ import logo from '../assets/logo.png';
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -15,19 +16,15 @@ const Navbar = () => {
        
           <li className="app__flex p-text">
            
-            <a href='https://patriziothedev.com/'> Home</a>
+          <Link to = {'/'} onClick={() => setToggle(false)}>Home</Link>  
         </li>
         
         <li className="app__flex p-text">
            
-           <a href='https://patriziothedev.com/'>About Me</a>
+        <Link to = {'AboutMe'} onClick={() => setToggle(false)}>About Me</Link>  
         </li>
         
-        <li className="app__flex p-text">
-           
-           <a href='#contact'>Contact</a>
-        </li>
-        
+    
        
   
       </ul>
@@ -42,17 +39,18 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-                <li>
-                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>Home</a>               
-              </li>
+              
+            <li>
+           
+           <Link to = "/" onClick={() => setToggle(false)}>Home</Link>  
+         </li>
                  
               <li>
-                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>About Me</a>   
+              <Link to = {'AboutMe'} onClick={() => setToggle(false)}>About Me</Link>  
                 </li>
 
-                <li>
-                  <a href='#contact' onClick={() => setToggle(false)} >Contact</a>
-                </li>
+           
+
           
             </ul>
           </motion.div>
