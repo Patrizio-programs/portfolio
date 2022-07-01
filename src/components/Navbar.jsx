@@ -23,6 +23,12 @@ const Navbar = () => {
            <a href='https://patriziothedev.com/'>About Me</a>
         </li>
         
+
+        <li className="app__flex p-text">
+           
+           <a href='#contact'>Contact</a>
+        </li>
+        
        
   
       </ul>
@@ -33,7 +39,7 @@ const Navbar = () => {
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: 'easeOut' }}
+            transition={{ duration: 1.85, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
