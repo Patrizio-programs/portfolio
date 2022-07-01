@@ -37,20 +37,12 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              
                 <li>
-                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>Home
-                  
-                </a>
-                
+                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>Home</a>               
               </li>
-              
-              
+                 
               <li>
-                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>About Me
-                  
-                </a>
-                
+                  <a href='https://patriziothedev.com/' onClick={() => setToggle(false)}>About Me</a>   
                 </li>
 
                 <li>
