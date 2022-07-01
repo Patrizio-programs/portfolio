@@ -1,4 +1,4 @@
-app__works {
+.app__works {
     flex: 1;
     width: 100%;
     flex-direction: column;
@@ -13,7 +13,7 @@ app__works {
 
     margin: 4rem 0 2rem;
 
-    .app__work-filter-item {
+    &-item {
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       background-color: #fff;
@@ -47,34 +47,56 @@ app__works {
     justify-content: center;
     align-items: center;
 
-    .app__work-item {
-      width: 270px;
-      flex-direction: column;
+    
+  }
 
-      margin: 2rem;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      background-color: #fff;
-      color: #000;
+  .app__work-item {
+    width: auto;
+    max-width: 400px;
+    height: auto;
 
-      cursor: pointer;
-      transition: all 0.3s ease;
 
-      &:hover {
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-      }
+    flex-direction: column;
 
-      @media screen and (min-width: 2000px) {
-        width: 470px;
-        padding: 1.25rem;
-        border-radius: 0.75rem;
-      }
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0s;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
 
-      @media screen and (max-width: 300px) {
-        width: 100%;
-        margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media screen and (min-width: 2000px) {
+      max-width: 470px;
+      width: auto;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      width: 200px;
+      margin: 1rem;
+    }
+
+    &-img{
+      width: auto;
+      height: auto;
+      margin: 0;
+
+      img{
+        width: auto;
+        height: auto;
+        border-radius: 0.5rem;
       }
     }
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+
+    
   }
 
   .app__work-img {
@@ -132,7 +154,7 @@ app__works {
 
   .app__work-content {
     padding: 0.5rem;
-    width: 100%;
+    width: auto;
     position: relative;
     flex-direction: column;
 
@@ -140,13 +162,11 @@ app__works {
       margin-top: 1rem;
       line-height: 1.5;
 
-      @media screen and (min-width: 2000px) {
-        margin-top: 3rem;
-      }
+     
     }
 
     .app__work-tag {
-    margin:5px;
+      margin: 3px;
       padding: 0.5rem 1rem;
       border-radius: 10px;
       background-color: rgb(202, 42, 2);
@@ -161,16 +181,24 @@ app__works {
     margin: 10px;
     border-radius: 20px;
     padding: 10px;
+    width: auto;
 
     img{
-        width: 300px;
+        max-width: 300px;
+        width: auto;
+        height: auto;
     }
   }
 
   .project__container{
-    margin: 10px;
+  width: auto;
+  height: auto;
+
     display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 
-  } 
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }
