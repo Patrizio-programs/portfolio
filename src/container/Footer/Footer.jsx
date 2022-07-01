@@ -66,7 +66,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Contact</h2>
+      <a id='contact'><h2 className="head-text">Contact</h2> </a>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">

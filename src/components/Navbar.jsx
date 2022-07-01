@@ -52,6 +52,10 @@ const Navbar = () => {
                 </a>
                 
                 </li>
+
+                <li>
+                  <a href='#contact' onClick={() => setToggle(false)}>Contact</a>
+                </li>
           
             </ul>
           </motion.div>
