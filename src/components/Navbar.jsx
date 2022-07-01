@@ -7,6 +7,10 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const scrollUp = () =>{
+      window.scrollTo(0,0)
+      setToggle(false)
+    }
   return (
     <nav className='app__navbar'>
         <div className='app__navbar-logo'>
@@ -16,12 +20,12 @@ const Navbar = () => {
        
           <li className="app__flex p-text">
            
-          <Link to = {'/'} onClick={() => setToggle(false)}>Home</Link>  
+          <Link to = {'/'} onClick={() => scrollUp()}>Home</Link>  
         </li>
         
         <li className="app__flex p-text">
            
-        <Link to = {'AboutMe'} onClick={() => setToggle(false)}>About Me</Link>  
+        <Link to = {'AboutMe'} onClick={() => scrollUp()}>About Me</Link>  
         </li>
         
     

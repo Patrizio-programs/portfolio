@@ -2,7 +2,7 @@ import Home from "./Home";
 import "./App.scss";
 import emailjs from "@emailjs/browser";
 import Navbar from "./components/Navbar";
-import {  Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Footer from "./container/Footer/Footer";
 
@@ -23,8 +23,11 @@ function App() {
     <div className="app">
       <Navbar/>
       <Routes>
+    
               <Route path='/' element={<Home/>} />
               <Route path='/aboutme' element={<AboutMe/>} />
+
+         
     </Routes>
 
     <Footer/>
