@@ -16,8 +16,8 @@ const About = () => {
   }, []);
   return (
     <div id='about'>
-      <h2 className="head-text">My goal is to create high functional and quality websites that are <span>crisp</span> 
-      <br />and  <span>clean. test</span> </h2>
+      <h2 className="head-text">My goal is to create high functional and quality websites that are <span>crisp</span>
+      and  <span>clean.</span> </h2>
       
       <div className='app__profiles'>
       {abouts.map((about, index) => (
