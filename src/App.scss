@@ -286,4 +286,8 @@ body{
   align-items: center;
   flex-direction: row;
   gap: 20px;
+
+  @media(min-width: 501px){
+    display: none;
+  }
 }
