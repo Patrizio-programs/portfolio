@@ -11,6 +11,8 @@ const Navbar = () => {
       window.scrollTo(0,0)
       setToggle(false)
     }
+
+
   return (
     <nav className='app__navbar'>
         <div className='app__navbar-logo'>
@@ -39,18 +41,18 @@ const Navbar = () => {
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            transition={{ duration: 1.85, ease: 'easeOut' }}
+            transition={{ duration: .90, ease: 'easeOut' }}
           >
-            <HiX onClick={() => setToggle(false)} />
+            <HiX onClick={() => scrollUp()} />
             <ul>
               
             <li>
            
-           <Link to = "/" onClick={() => setToggle(false)}>Home</Link>  
+           <Link to = "/" onClick={() => scrollUp()}>Home</Link>  
          </li>
                  
               <li>
-              <Link to = {'AboutMe'} onClick={() => setToggle(false)}>About Me</Link>  
+              <Link to = {'AboutMe'} onClick={() => scrollUp()}>About Me</Link>  
                 </li>
 
            
