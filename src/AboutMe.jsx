@@ -1,4 +1,4 @@
-import "./App.scss";
+import './App.scss';
 import React from 'react';
 import AppWrap from "./Wrapper/AppWrap";
 import pic from './assets/profile_pic.jpg';

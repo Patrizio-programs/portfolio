@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Footer from "./container/Footer/Footer";
+import React from "react";
 
 
 (function () {
