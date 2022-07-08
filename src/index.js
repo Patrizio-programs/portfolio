@@ -1,6 +1,11 @@
 import React from "react";
 import "./index.css";
 import App from "./App";
-import { render } from 'react-snapshot';
+import { hydrate, render } from "react-dom";
 
-render(<App />, document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
