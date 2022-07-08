@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 
 
+
+
 const AboutMe = () => {
   const x = useMotionValue(0)
   const background = useTransform(
@@ -29,15 +31,18 @@ const AboutMe = () => {
         style={{ x }}
         className='motion-card'
       >
-        <div class="card">
+        <div className="card">
         <img src={pic} alt='profile-pic'/>
-        <div class="details">
+        <div className="details">
             <h2>Patrick Medley</h2>
             <p>Web Dev</p>
         </div>
         <p id="info">My name is Patrick Medley and I am from Jamaica 🇯🇲. I love sports and reading books. I am interested in all sciences and I love Technology.
         </p>
     </div>
+
+
+  
 
      
       </motion.div>

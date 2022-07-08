@@ -25,9 +25,12 @@ const Navbar = () => {
           <Link to = {'/'} onClick={() => scrollUp()}>Home</Link>  
         </li>
         
-        <li className="app__flex p-text">
-           
+        <li className="app__flex p-text">  
         <Link to = {'AboutMe'} onClick={() => scrollUp()}>About Me</Link>  
+        </li>
+
+        <li className="app__flex p-text">  
+        <Link to = {'Resume'} onClick={() => scrollUp()}>Resume</Link>  
         </li>
         
     
@@ -53,6 +56,10 @@ const Navbar = () => {
                  
               <li>
               <Link to = {'AboutMe'} onClick={() => scrollUp()}>About Me</Link>  
+                </li>
+
+                <li>
+              <Link to = {'Resume'} onClick={() => scrollUp()}>Resume</Link>  
                 </li>
 
            

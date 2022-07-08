@@ -24,8 +24,8 @@ const Work = () => {
         {works.map((work, index) => (
 
         <div 
-        whileInView={{ opacity: 1 }}
-        whileHover={{ scale: 1.1 }}
+        whileinview={{ opacity: 1 }}
+        whilehover={{ scale: 1.1 }}
         transition={{ duration: 0.5, type: 'tween' }}
         className="app__work-item app__flex"
             key={work.title + index}>

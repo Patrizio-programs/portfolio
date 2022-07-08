@@ -235,10 +235,7 @@
     }
   } 
 
-  // Profile Card
-
-
-  /* Please take a look at this video! https://www.youtube.com/watch?v=M7MuHxHI8Xc */
+ 
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;600&display=swap');
 
 
@@ -290,4 +287,33 @@ body{
   @media(min-width: 501px){
     display: none;
   }
+}
+
+//Resume Styles
+
+.resume{
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.byu{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.byu a{
+  width: 300px;
+}
+
+.byu img{
+  max-width: 300px;
+  height: auto;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
