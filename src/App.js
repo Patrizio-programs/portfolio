@@ -7,6 +7,7 @@ import AboutMe from "./AboutMe";
 import Footer from "./container/Footer/Footer";
 import React from "react";
 import Resume from "./Resume";
+import {HashRouter as Router} from "react-router-dom";
 
 
 (function () {
@@ -15,7 +16,7 @@ import Resume from "./Resume";
 
 function App() {
   return (
-
+    <Router>
     <div className="app">
       <Navbar/>
       <Routes>
@@ -26,6 +27,7 @@ function App() {
     </Routes>
     <Footer/>
     </div>
+    </Router>
 
   );
 }
