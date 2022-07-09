@@ -13,7 +13,7 @@ const Resume = () => {
        <p>Currently studying to recieve a B.S in Applied Technology at Brigham Young University-Idaho in 2024.</p>
 
         <a href='https://www.byui.edu/' target='blank'>
-        <img src='https://m.media-amazon.com/images/I/61veeFqrcxL._AC_SL1000_.jpg' alt='BYU pic'/>
+        <img src='https://m.media-amazon.com/images/I/61veeFqrcxL._AC_SL1000_.jpg' alt='BYU pic' width='auto' height='auto'/>
         </a>
     </div>
 
