@@ -17,11 +17,6 @@ const Resume = () => {
         </a>
     </div>
 
-   
-
-
-    
-
     <div className='experience'>
 
     <h2>Experience</h2>
@@ -38,17 +33,13 @@ const Resume = () => {
 
 <br></br>
 
-
     Influx as <b>Bilingual Customer Service Agent</b>
     <p>May 2021 - Present · 1 yr+</p>
 
 <br></br>
 
-
     Freelance as <b>Web Designer and Developer</b>
     <p>3 years experience working with small businesses on website design and development.</p>
-
-
 
     </div>
 
