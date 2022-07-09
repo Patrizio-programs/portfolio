@@ -31,7 +31,7 @@ const Work = () => {
             key={work.title + index}>
           <div className="app__work-item-img app__flex project">
              
-              <img src={urlFor(work.imgUrl)} alt={work.title} width='auto' height='auto' />
+              <img src={urlFor(work.imgUrl)} alt={work.title} width='280' height='170' />
               
               <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
