@@ -1,7 +1,7 @@
 import './App.scss';
 import React from 'react';
 import AppWrap from "./Wrapper/AppWrap";
-import pic from './assets/profile_pic.jpg';
+import pic from './assets/profile_pic.webp';
 import {
   motion,
   useMotionValue,
@@ -32,7 +32,7 @@ const AboutMe = () => {
         className='motion-card'
       >
         <div className="card">
-        <img src={pic} alt='profile-pic'/>
+        <img src={pic} alt='profile-pic' width='auto' height='auto'/>
         <div className="details">
             <h2>Patrick Medley</h2>
             <p>Web Dev</p>
