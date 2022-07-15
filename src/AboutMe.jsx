@@ -4,8 +4,7 @@ import AppWrap from "./Wrapper/AppWrap";
 import pic from './assets/profile_pic.webp';
 import {
   motion,
-  useMotionValue,
-  useTransform,
+  useMotionValue
 } from "framer-motion";
 
 
@@ -13,18 +12,14 @@ import {
 
 const AboutMe = () => {
   const x = useMotionValue(0)
-  const background = useTransform(
-    x,
-    [-100, 0, 100],
-    ["#ff008c", "#edf2f8", "#ca2a02"]
-  )
+ 
   return (
 
     <div className ='aboutme' id='aboutme'>
 
       <h2>Hint: Drag the card left or right...</h2>
 
-<motion.div style={{ background }} className='motion-background' id='motion-background'>
+<motion.div className='motion-background' id='motion-background'>
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}

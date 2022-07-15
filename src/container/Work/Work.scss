@@ -51,23 +51,16 @@
   }
 
   .app__work-item {
-    width: auto;
+    
     max-width: 400px;
     height: auto;
-
-
     flex-direction: column;
-
     margin-right: auto;
     margin-left: auto;
-    padding: 0s;
-    border-radius: 0.5rem;
-    background-color: #fff;
+    border-radius: 20px;
     color: #000;
-
     cursor: pointer;
     transition: all 0.3s ease;
-
     @media screen and (min-width: 2000px) {
       max-width: 470px;
       width: auto;
@@ -178,10 +171,12 @@
   .project{
     flex-direction: column;
     border: #000 solid 1px;
-    margin: 10px;
+    padding: 5px;
+    
     border-radius: 20px;
-    padding: 10px;
+    max-width: 400px;
     width: auto;
+    height: auto;
 
     img{
         max-width: 300px;

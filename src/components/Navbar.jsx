@@ -67,6 +67,7 @@ const Navbar = () => {
                 </li>
 
             </ul>
+       
           </motion.div>
         )}
       </div>

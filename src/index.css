@@ -19,7 +19,14 @@
   scroll-behavior: smooth;
 }
 
+[data-theme = light] * {
+  font-family: var(--font-base);
+}
 
+[data-theme = light] .motion-background{
+
+  background-color: #edf2f8;
+}
 
 
 [data-theme="dark"] {
@@ -28,6 +35,7 @@
   --link-color: rgb(28, 14, 94);
   --secondary-color: #ca2a02;
   --gray-color: #6b7688;
+  --font-base: "DM Sans", sans-serif;
   
 }
 
