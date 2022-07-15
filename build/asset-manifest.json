@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.82d19245.css",
-    "main.js": "/static/js/main.2aea7b95.js",
+    "main.css": "/static/css/main.f585ff57.css",
+    "main.js": "/static/js/main.704c39a3.js",
     "static/media/BYU.webp": "/static/media/BYU.811d0c1796db1c7c6984.webp",
     "static/media/profile_pic.webp": "/static/media/profile_pic.469125bbfc928cfa72e7.webp",
     "static/media/logo.webp": "/static/media/logo.c33bc123a2402a578101.webp",
     "index.html": "/index.html",
-    "main.82d19245.css.map": "/static/css/main.82d19245.css.map",
-    "main.2aea7b95.js.map": "/static/js/main.2aea7b95.js.map"
+    "main.f585ff57.css.map": "/static/css/main.f585ff57.css.map",
+    "main.704c39a3.js.map": "/static/js/main.704c39a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.82d19245.css",
-    "static/js/main.2aea7b95.js"
+    "static/css/main.f585ff57.css",
+    "static/js/main.704c39a3.js"
   ]
 }

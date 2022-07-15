@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
 import './Navbar.scss';
+import DarkMode from './DarkMode';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -32,11 +33,14 @@ const Navbar = () => {
         <li className="app__flex p-text">  
         <Link to = {'Resume'} onClick={() => scrollUp()}>Resume</Link>  
         </li>
-        
-    
-       
-  
+
+
+        <div>
+        <DarkMode/>
+      </div>
       </ul>
+
+      
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -62,9 +66,6 @@ const Navbar = () => {
               <Link to = {'Resume'} onClick={() => scrollUp()}>Resume</Link>  
                 </li>
 
-           
-
-          
             </ul>
           </motion.div>
         )}

@@ -24,7 +24,7 @@ const AboutMe = () => {
 
       <h2>Hint: Drag the card left or right...</h2>
 
-<motion.div style={{ background }} className='motion-background'>
+<motion.div style={{ background }} className='motion-background' id='motion-background'>
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}

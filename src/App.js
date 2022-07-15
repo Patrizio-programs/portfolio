@@ -15,9 +15,15 @@ import {HashRouter as Router} from "react-router-dom";
 })();
 
 function App() {
+  
   return (
+    <div>
+    
+   
+      
     <Router>
     <div className="app">
+   
       <Navbar/>
       <Routes>
     
@@ -28,6 +34,9 @@ function App() {
     <Footer/>
     </div>
     </Router>
+    
+    </div>
+   
 
   );
 }
