@@ -43,12 +43,16 @@
     ]
   },
   "dependencies": {
+    "@mantine/core": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
+    "@mantine/next": "^4.2.12",
     "framer-motion": "^4.1.17",
     "node-sass": "^7.0.1",
     "react-router-sitemap-generator": "^0.0.8",
     "react-scripts": "^5.0.1",
     "react-snap": "^1.23.0",
-    "reactstrap": "^9.1.1"
+    "reactstrap": "^9.1.1",
+    "tabler-icons-react": "^1.53.0"
   },
   "reactSnapshot": {
     "include": [

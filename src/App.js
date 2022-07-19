@@ -9,7 +9,6 @@ import React from "react";
 import Resume from "./Resume";
 import {HashRouter as Router} from "react-router-dom";
 
-
 (function () {
   emailjs.init("LfuScSUIeiHe69orR");
 })();
@@ -17,6 +16,7 @@ import {HashRouter as Router} from "react-router-dom";
 function App() {
   
   return (
+    
     <div>
     
    
@@ -25,6 +25,7 @@ function App() {
     <div className="app">
    
       <Navbar/>
+     
       <Routes>
     
               <Route path='/' element={<Home/>} />
@@ -34,8 +35,9 @@ function App() {
     <Footer/>
     </div>
     </Router>
-    
+
     </div>
+    
    
 
   );
