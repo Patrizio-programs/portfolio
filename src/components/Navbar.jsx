@@ -4,7 +4,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
 import './Navbar.scss';
-import DarkMode from './DarkMode';
+
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
         <div>
-        <DarkMode/>
+     
       </div>
       </ul>
 
@@ -50,7 +50,7 @@ const Navbar = () => {
             whileInView={{ x: [300, 0] }}
             transition={{ duration: .90, ease: 'easeOut' }}
           >
-            <HiX onClick={() => scrollUp()} />
+            <HiX onClick={() => setToggle(false)} />
             <ul>
               
             <li>

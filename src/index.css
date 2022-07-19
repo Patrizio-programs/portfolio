@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-[data-theme = light]:root {
+.app__switch {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
@@ -9,8 +18,16 @@
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+ 
+
+  /*Dark Mode */
+
+  --darkbackground: #333;
+  --darklink: #41ca96;
+  --darktext: #fff;
+
 }
+
 
 * {
   box-sizing: border-box;
@@ -29,7 +46,7 @@
 }
 
 
-[data-theme="dark"] {
+#dark :root {
   --font-color: #eee;
   --background-color: #333;
   --link-color: rgb(28, 14, 94);
@@ -48,92 +65,32 @@ body {
   color: var(--link-color);
 }
 
-a {
-  color: var(--gray-color);
+
+#dark a {
+  color: var(--darklink);
 }
 
-/* Custom Dark Mode Toggle Element */
-
-.toggle-theme-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.toggle-theme-wrapper span {
-  font-size: 28px;
-  margin: 0 4px;
-}
-
-.toggle-theme {
-  position: relative;
-  display: inline-block;
-  height: 34px;
-  width: 60px;
-}
-
-.toggle-theme input {
-  display: none;
-}
-
-.slider {
-  background-color: #ccc;
-  position: absolute;
-  cursor: pointer;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition: 0.2s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-input:checked + .slider {
-  background-color: cornflowerblue;
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+#dark a:hover {
+  color: var(--secondary-color);
 }
 
 
-[data-theme="dark"] input.p-text, textarea.p-text {
-
-  background-color: rgb(28, 14, 94);
-
-}
 
 [data-theme="dark"] .card{
   color: black;
 }
 
 
-[data-theme="dark"] #motion-background{
 
-  background-color: var(--background-color);
+#light .app__switch label {
+   
+    color: var(--font-color);
+  
 }
 
 
-[data-theme = light] textarea, input{
-
-  background-color: var(--primary-color);
+#dark .app__switch label {
+   
+  color: var(--darktext);
 
 }

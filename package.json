@@ -51,6 +51,7 @@
     "react-router-sitemap-generator": "^0.0.8",
     "react-scripts": "^5.0.1",
     "react-snap": "^1.23.0",
+    "react-switch": "^7.0.0",
     "reactstrap": "^9.1.1",
     "tabler-icons-react": "^1.53.0"
   },

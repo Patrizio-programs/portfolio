@@ -104,11 +104,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <>📧 </>
-          <a href="mailto:patriziomedley@gmail.com" className="p-text">patriziomedley@gmail.com</a>
+          <a href="mailto:patriziomedley@gmail.com" >patriziomedley@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <>📱</>
-          <a href="tel:+1 (784) 430-3121" className="p-text">+1 (784) 430-3121</a>
+          <a href="tel:+1 (784) 430-3121">+1 (784) 430-3121</a>
         </div>
       </div>
       {!isFormSubmitted ? (
@@ -116,16 +116,16 @@ const Footer = () => {
         <div className="app__footer-form app__flex">
             <div className="app__flex">
             <label htmlFor="name"></label>
-            <input className="p-text" type="text" placeholder="Your Name" name="name" value={username} onChange={handleChangeInput} required/>
+            <input  type="text" placeholder="Your Name" name="name" value={username} onChange={handleChangeInput} required/>
           </div>
             <div className="app__flex">
             <label htmlFor="email"></label>
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} required/>
+            <input  type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} required/>
           </div>
             <div>
             <label htmlFor="message"></label>
             <textarea
-              className="p-text"
+           
               placeholder="Your Message"
               value={message}
                 name="message"

@@ -17,7 +17,7 @@ const AboutMe = () => {
 
     <div className ='aboutme' id='aboutme'>
 
-      <h2>Hint: Drag the card left or right...</h2>
+      <h2 className='head-text'>Hint: Drag the card left or right...</h2>
 
 <motion.div className='motion-background' id='motion-background'>
       <motion.div

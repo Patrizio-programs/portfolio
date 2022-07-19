@@ -1,7 +1,18 @@
-.app {
-    background-color: var(--primary-color);
+ .app {
+
     font-family: var(--font-base);
   }
+
+  #light .app{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+
+  #dark .app{
+    background-color: var(--darkbackground);
+    color: var(--text-color);
+  }
+
 
   .app__whitebg {
     background-color: var(--white-color);
@@ -35,6 +46,10 @@
       padding: 4rem 1rem 2rem;
     }
   }
+  #light .app__wrapper{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
 
   .copyright {
     width: 100%;
@@ -48,6 +63,7 @@
     p {
       text-transform: uppercase;
       color: var(--black-color);
+      margin-right: 15px;
     }
   }
 
@@ -71,6 +87,10 @@
     }
   }
 
+  #dark .head-text{
+    color: var(--darktext);
+  }
+
   .p-text {
     font-size: 0.8rem;
     text-align: left;
@@ -80,6 +100,10 @@
     @media screen and (min-width: 2000px) {
       font-size: 1.75rem;
     }
+  }
+
+  #dark .p-text{
+    color: var(--darktext);
   }
 
   .bold-text {
@@ -95,6 +119,10 @@
     @media screen and (max-width: 450px) {
       font-size: 0.9rem;
     }
+  }
+
+  #dark .bold-text{
+    color: var(--darktext);
   }
 
   //motion styles
@@ -126,7 +154,7 @@
    
     flex-shrink: inherit;
     justify-content: center;
-    background-color: #f3f6fa;
+  
 
     @media(max-width: 830px){
       width: 500px;
@@ -173,12 +201,21 @@
         color: var(--gray-color);
       }
 
-      &:hover {
+      #light &:hover {
         background-color: var(--secondary-color);
         border-color: var(--secondary-color);
 
         svg {
-          color: var(--white-color);
+          color: #fff;
+        }
+      }
+
+      #dark &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+
+        svg {
+          color: #fff;
         }
       }
 
@@ -232,6 +269,7 @@
 
     .copyright {
       padding: 2rem;
+    
     }
   } 
 
@@ -321,4 +359,8 @@ body{
 
 .dark-content {
   background: #211919;
+}
+
+#dark #resume {
+  color: var(--darktext);
 }

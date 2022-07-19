@@ -6,7 +6,7 @@ import byu from './assets/BYU.webp'
 const Resume = () => {
   return (
     <div id='resume' className='resume'>
-        <h1>Resume</h1>
+        <h1 className='head-text'>Resume</h1>
 
     <div className='byu'>
     <h2>Education</h2>

@@ -64,9 +64,15 @@
         font-weight: 500;
 
         transition: all 0.3s ease-in-out;
+        color: var(--gray-color);
 
         &:hover {
           color: var(--secondary-color);
+        }
+
+        #dark &:hover{
+          color: var(--secondary-color);
+
         }
       }
 
@@ -74,6 +80,8 @@
         div {
           background: var(--secondary-color);
         }
+        
+      
       }
     }
 
@@ -81,6 +89,8 @@
       display: none;
     }
   }
+
+ 
 
   .app__navbar-menu {
     width: 35px;
@@ -118,7 +128,7 @@
       flex-direction: column;
 
 
-      background-color: var(--white-color);
+      background-color: var(--primary-color);
       background-size: cover;
       background-repeat: repeat;
 
